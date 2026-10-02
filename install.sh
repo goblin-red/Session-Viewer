@@ -1,10 +1,10 @@
 #!/bin/bash
 # Установка GOBL(in) Session Viewer: скачивает готовую сборку из GitHub Releases.
-#   curl -fsSL https://raw.githubusercontent.com/goblin-red/session-viewer/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/goblin-red/Session-Viewer/main/install.sh | bash
 # Свой путь установки: GOBLIN_INSTALL_DIR=~/Apps; не открывать после установки: bash -s -- --no-open
 set -euo pipefail
 
-REPO="goblin-red/session-viewer"
+REPO="goblin-red/Session-Viewer"
 ASSET="goblin-session-viewer-macos.zip"
 NAME="GOBL(in) Session Viewer"
 URL="https://github.com/${REPO}/releases/latest/download/${ASSET}"

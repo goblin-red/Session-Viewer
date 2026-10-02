@@ -1,7 +1,5 @@
 # GOBL(in) Session Viewer
 
-**English** · [Русский](README.ru.md)
-
 Lets you view all the sessions of your terminal and desktop agents.
 
 One window lists every conversation you had with Claude Code, Codex, Grok and OpenCode on this Mac:
@@ -22,7 +20,6 @@ One of the apps of [GOBL(in)](https://goblin.red).
   the "Automated runs" checkbox shows them.
 - Sessions that are already in the desktop app are marked and can't be imported twice.
 - The list loads 50 sessions at a time.
-- Two interface languages, English and Russian: English by default, switched with the EN / RU buttons.
 
 ## Where the sessions come from
 
@@ -42,10 +39,10 @@ that tells the desktop app "this session exists, and here it is". After the impo
 Paste this into Terminal:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/goblin-red/session-viewer/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/goblin-red/Session-Viewer/main/install.sh | bash
 ```
 
-The script downloads the ready-made build from [Releases](https://github.com/goblin-red/session-viewer/releases/latest),
+The script downloads the ready-made build from [Releases](https://github.com/goblin-red/Session-Viewer/releases/latest),
 puts it into `/Applications` and opens it. The build is universal: it runs on Apple Silicon and on Intel Macs,
 and no Xcode tools are needed. To update, run the same command again.
 
@@ -72,8 +69,8 @@ or the import may stop working. It is a personal tool, use it at your own risk.
 Needs Xcode Command Line Tools (`xcode-select --install`).
 
 ```sh
-git clone https://github.com/goblin-red/session-viewer.git
-cd session-viewer
+git clone https://github.com/goblin-red/Session-Viewer.git
+cd Session-Viewer
 
 ./build_app.sh
 open "build/GOBL(in) Session Viewer.app"
@@ -88,9 +85,7 @@ open "build/GOBL(in) Session Viewer.app"
 | `install.sh` | installs the ready-made build from Releases |
 | `package.sh` | packs the build for Releases: `build/goblin-session-viewer-macos.zip` |
 | `logo.svg`, `AppIcon.icns` | the Goblin logo for the window and the app icon |
-| `CHANGELOG.md` | change history (in Russian) |
-
-Code comments are in Russian.
+| `CHANGELOG.md` | change history |
 
 ## License
 

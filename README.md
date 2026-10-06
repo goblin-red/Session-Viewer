@@ -1,4 +1,10 @@
-# GOBL(in) Session Viewer
+<p align="center"><img src="docs/banner.png" alt="GOBL(in) Session Viewer: AI coding agent session history browser for macOS" width="100%"></p>
+
+# GOBL(in) Session Viewer — Claude Code, Codex, Grok and OpenCode session history for macOS
+
+![macOS 10.15+](https://img.shields.io/badge/macOS-10.15+-000000?logo=apple&logoColor=white) ![Swift native](https://img.shields.io/badge/Swift-native-F05138?logo=swift&logoColor=white) ![Apple Silicon %26 Intel universal](https://img.shields.io/badge/Apple%20Silicon%20%26%20Intel-universal-555555) [![license MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![GitHub stars](https://img.shields.io/github/stars/goblin-red/Session-Viewer?style=social)](https://github.com/goblin-red/Session-Viewer/stargazers)
+
+**Find any conversation you ever had with an AI coding agent.** One native macOS window lists every Claude Code, Codex, Grok and OpenCode session on your Mac — with the first message, project folder, size and date — and can import terminal sessions into the Claude and Codex desktop apps so you can continue them there.
 
 Lets you view all the sessions of your terminal and desktop agents.
 
@@ -86,6 +92,32 @@ open "build/GOBL(in) Session Viewer.app"
 | `package.sh` | packs the build for Releases: `build/goblin-session-viewer-macos.zip` |
 | `logo.svg`, `AppIcon.icns` | the Goblin logo for the window and the app icon |
 | `CHANGELOG.md` | change history |
+
+## FAQ
+
+**Where does Claude Code store its sessions?**
+In `~/.claude/projects/<project>/*.jsonl`, one file per conversation. Session Viewer reads them (read-only) and shows them as a sortable, filterable list.
+
+**How do I continue a Claude Code terminal session in the Claude desktop app?**
+Select the session and press Import: the app adds a small card that tells the desktop app the session exists. Restart the desktop app and the conversation appears in its history.
+
+**Where is the Codex CLI history?**
+In `~/.codex/sessions/**/rollout-*.jsonl`. Session Viewer lists those sessions too and can add them to the Codex desktop app.
+
+## More GOBL(in) apps
+
+Free and open source, from the makers of [GOBL(in)](https://goblin.red):
+
+| App | What it does |
+| --- | --- |
+| [GOBL(in) Remote](https://github.com/goblin-red/Goblin-Remote) | self-hosted remote desktop for macOS in any browser, over cheap PHP hosting |
+| [GOBL(in) Voice](https://github.com/goblin-red/Orca-Voice) | voice control and dictation for Claude Code, Codex and Orca on macOS |
+| [GOBL(in) Drag & Taskbar](https://github.com/goblin-red/Drag-and-Taskbar) | move windows with trackpad gestures, a real taskbar and Alt-Tab for macOS |
+| [GOBL(in) Convert](https://github.com/goblin-red/Photo-Convert) | fast batch JPEG converter and photo resizer for macOS |
+| [GOBL(in) Workflow](https://github.com/goblin-red/Workflow) | visual flowchart workflows run by AI coding agents |
+
+If this project is useful to you, please ⭐ star it — it helps other people find it.
+
 
 ## License
 
